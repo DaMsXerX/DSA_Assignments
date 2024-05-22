@@ -109,7 +109,7 @@ public class DoubStack
         obj.create_Stack(size);
         do
         {
-            System.out.println("\n1.Push\n2.Pop\n3.Peek\n4.Print Stack\n5.Push2\n6.Pop2\n7.Peek2\n8.Print Stack266\n0.Exit\n:");
+            System.out.println("\n1.Push\n2.Pop\n3.Peek\n4.Print Stack\n5.Push2\n6.Pop2\n7.Peek2\n8.Print Stack2\n9.Print Full Stack\n0.Exit\n:");
             choice=in.nextInt();
             switch (choice)
             {
