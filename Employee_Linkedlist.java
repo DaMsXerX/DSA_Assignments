@@ -91,6 +91,66 @@ public class Employee_Linkedlist {
         }
     }
 
+    void updateSalary(int eid, int newSalary) {
+    if (root == null) {
+        System.out.println("List is empty");
+        return;
+    }
+
+    Employee t = root;
+    while (t != null && t.eid != eid) {
+        t = t.next;
+    }
+
+    if (t == null) {
+        System.out.println("Employee not found");
+    } else {
+        t.salary = newSalary;
+        System.out.println("Salary updated successfully");
+    }
+}
+
+
+
+    void highestSalaryEmployee() {
+    if (root == null) {
+        System.out.println("List is empty");
+        return;
+    }
+
+    Employee t = root;
+    Employee max = root;
+
+    while (t != null) {
+        if (t.salary > max.salary) {
+            max = t;
+        }
+        t = t.next;
+    }
+
+    System.out.println("Highest Salary Employee:");
+    System.out.println("ID: " + max.eid + ", Name: " + max.name + ", Salary: " + max.salary);
+}
+
+
+
+
+    void reverseList() {
+    Employee prev = null;
+    Employee curr = root;
+    Employee next;
+
+    while (curr != null) {
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+    }
+    root = prev;
+    System.out.println("List reversed");
+}
+
+
         
 
         
@@ -136,3 +196,4 @@ public class Employee_Linkedlist {
         }while(ch!=0);
     }
 }
+
