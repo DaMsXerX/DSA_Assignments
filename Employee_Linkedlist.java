@@ -112,6 +112,8 @@ public class Employee_Linkedlist {
 
 
 
+    // added new methods
+
     void highestSalaryEmployee() {
     if (root == null) {
         System.out.println("List is empty");
@@ -196,4 +198,5 @@ public class Employee_Linkedlist {
         }while(ch!=0);
     }
 }
+
 
