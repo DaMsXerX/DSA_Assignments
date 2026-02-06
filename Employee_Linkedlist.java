@@ -56,6 +56,7 @@ public class Employee_Linkedlist {
             }
         }
     }
+    // delete employee by id
     void delete_employee(int key) {
         if (root == null)
             System.out.println("Empty List");
@@ -90,6 +91,8 @@ public class Employee_Linkedlist {
             }
         }
     }
+
+    // update salary
 
     void updateSalary(int eid, int newSalary) {
     if (root == null) {
@@ -198,5 +201,6 @@ public class Employee_Linkedlist {
         }while(ch!=0);
     }
 }
+
 
 
