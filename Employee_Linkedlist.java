@@ -139,6 +139,8 @@ public class Employee_Linkedlist {
 
 
 
+    // reverse the list
+
 
     void reverseList() {
     Employee prev = null;
@@ -201,6 +203,7 @@ public class Employee_Linkedlist {
         }while(ch!=0);
     }
 }
+
 
 
 
