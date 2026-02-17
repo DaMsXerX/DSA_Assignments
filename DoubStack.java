@@ -88,6 +88,7 @@ public class DoubStack
         }
         
     }
+    // print stack1 + stack2
     void print_full_Stack(){
         for(int i=tos;i>-1;i--)
         {
@@ -189,4 +190,5 @@ public class DoubStack
 
         }while(choice!=0);//condtion exit choice in inverted to option
     }
+
 }
